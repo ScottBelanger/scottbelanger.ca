@@ -1,0 +1,298 @@
+<app-header-bar></app-header-bar>
+
+<div class="my-education-coverPhoto" style="background-image:url(../assets/images/myEducationBackground.jpg);">
+</div>
+
+<div class="my-education-header">
+  <div class="my-education-header-content">
+    <div class="my-education-header-content-title">My Interests</div>
+    <hr class="my-education-header-content-underline">
+  </div>
+</div>
+
+<div class="my-education-container">
+  <div class="my-education-container-quickLinks">
+    <ul class="my-education-container-quickLinks-list" *ngFor="let chapter of myInterestChapters; let i of index">
+      <li>
+        <a pageScroll [href]="'#' + chapter" class="my-education-container-quickLinks-list-option">{{chapter}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <!--<div id='Tutorials' class="my-education-container-title">
+    Tutorials
+  </div>
+  <div class="my-education-container-content">
+    <md-tab-group>
+      <md-tab label="JQV Map">
+        <p>
+          This guide is very helpful for any developers looking to use JQVMap with typescript.
+          It is important that you download the two following NPM packages:
+        </p>
+        <ul>
+          <li>JQVMap using 'npm install jqvmap'</li>
+          <li>JQuery using 'npm install jquery'</li>
+        </ul>
+        <md-card>
+          <app-jqvmap-guide-card>
+          </app-jqvmap-guide-card>
+        </md-card>
+      </md-tab>
+    </md-tab-group>
+  </div>-->
+  <div id='Artificial Intelligence' class="my-education-container-title">
+    Artificial Intelligence
+  </div>
+  <div class="my-education-container-content">
+      <!--<md-card class="my-education-container-content-vr-option" *ngFor="let tile of tiles">
+        {{tile}}
+      </md-card>-->
+
+    <div class="my-education-container-content-cardAlign">
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>AI - To Be Feared Or Embraced</md-card-title>
+          <md-card-subtitle>Danial Newman - forbes.com</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/aiprosandcons.jpg">
+        <md-card-content>
+          <p>
+            July 11, 2017: It is exciting to push the boundaries with new technology like AI, but we must also address the consequences.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="https://www.forbes.com/sites/danielnewman/2017/07/11/artificial-intelligence-to-be-feared-or-embraced/#c02c5716f091" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+
+  <div id='Virtual and Artificial Reality' class="my-education-container-title">
+    Virtual and Artificial Reality
+  </div>
+  <div class="my-education-container-content">
+      <!--<md-card class="my-education-container-content-vr-option" *ngFor="let tile of tiles">
+        {{tile}}
+      </md-card>-->
+
+    <div class="my-education-container-content-cardAlign">
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>Top Mixed Reality Companies</md-card-title>
+          <md-card-subtitle>Mixed Reality | Entrepreneur.com</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/mixedRealityCompanies.jpeg">
+        <md-card-content>
+          <p>
+            April 18, 2017: With so many companies competing to lead VR and AR into the future, it will be an exciting 2017.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="https://www.entrepreneur.com/article/292732" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>AR and VR in Enterprise</md-card-title>
+          <md-card-subtitle>AR and VR - itbusiness.ca</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/vrAndAr.jpg">
+        <md-card-content>
+          <p>
+            March 29, 2017: As VR and AR grow more mainstream, business enterprises will continue to upgrade.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="http://www.itbusiness.ca/news/vr-and-ar-will-thrive-in-the-enterprise/88495" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>Virtual Reality - Facebook's Oculus Rift</md-card-title>
+          <md-card-subtitle>Oculus Rift - Recode.net</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/oculusRift.jpg">
+        <md-card-content>
+          <p>
+            March 24, 2016: With the acquisition of Oculus, Facebook is driving virtual reality into reality.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="https://www.recode.net/2016/3/24/11587234/two-years-later-facebooks-oculus-acquisition-has-changed-virtual" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+
+  <div id='Big Data' class="my-education-container-title">
+    Big Data
+  </div>
+  <div class="my-education-container-content">
+    <div class="my-education-container-content-cardAlign">
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>Big Data and the Cloud</md-card-title>
+          <md-card-subtitle>Big Data - ITProPortal.com</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/bigDataCloud.jpg">
+        <md-card-content>
+          <p>
+            April 19, 2017: With the continuous improvements to the cloud and computational capabilities to Big Data, mainstream customers are inching closer 
+            to being able to better analyze data.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="http://www.itproportal.com/features/will-the-cloud-save-big-data/" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>Big Data and Businesses</md-card-title>
+          <md-card-subtitle>Big Data - business2community.com</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/understandBigData.jpg">
+        <md-card-content>
+          <p>
+            April 11, 2017: Understanding Big Data and why it is such an important topic for businesses.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="http://www.business2community.com/big-data/big-data-important-businesses-01818898#J5BO5kBlKX6sgzug.97" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+
+  <div id='Internet of Things' class="my-education-container-title">
+    Internet of Things
+  </div>
+  <div class="my-education-container-content">
+    <div class="my-education-container-content-cardAlign">
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>IoT and Millenials</md-card-title>
+          <md-card-subtitle>IoT - forbes.com</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/iotMillenials.jpg">
+        <md-card-content>
+          <p>
+            March 24, 2017: As the Internet of Things becomes more prominent in our everyday lives, security must continue to
+            progress with it.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="https://www.forbes.com/sites/pikeresearch/2017/03/24/iot-and-millennials/#45c440e567ff" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+
+  <!--<div id='Cloud and De-Centralized Computing' class="my-education-container-title">
+    Cloud and De-Centralized Computing
+  </div>
+  <div class="my-education-container-content">
+    <md-tab-group>
+      <md-tab label="Tab 1">
+        Content 1
+      </md-tab>
+      <md-tab label="Tab 2">
+        Content 2
+      </md-tab>
+    </md-tab-group>
+  </div>-->
+
+  <div id='Renewable Energy' class="my-education-container-title">
+    Renewable Energy
+  </div>
+  <div class="my-education-container-content">
+    <div class="my-education-container-content-cardAlign">
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>Clean Energy is the Present</md-card-title>
+          <md-card-subtitle>Clean Energy - bloomberg.com</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/cleanEnergySolar.jpg">
+        <md-card-content>
+          <p>
+            April 19, 2017: A very interesting article showing the power of clean energy in the present and how it is shaping
+            our future.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="https://www.bloomberg.com/news/photo-essays/2017-04-19/clean-energy-isn-t-just-the-future-it-s-the-present" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>Renewable Energy Momentum</md-card-title>
+          <md-card-subtitle>Clean Energy - foreignpolicyjournal.com</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/renewableEnergy.jpg">
+        <md-card-content>
+          <p>
+            April 7, 2017: Renewable energy has the momentum to become unstoppable, and will continue to grow.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="https://www.foreignpolicyjournal.com/2017/04/07/the-march-of-renewable-energy-is-unstoppable-even-by-president-trump/" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+
+  <div id='Interesting Technology' class="my-education-container-title">
+    Interesting Technology
+  </div>
+  <div class="my-education-container-content">
+    <div class="my-education-container-content-cardAlign">
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>A Timeline Of Future Technology</md-card-title>
+          <md-card-subtitle>Jeff Desjardins - visualcapatalist.com</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/futurism.jpg">
+        <md-card-content>
+          <p>
+            July 17, 2017: An interesting prediction on what the future holds for different technologies.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="http://www.visualcapitalist.com/timeline-future-technology/" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>Leading the Technology Charge</md-card-title>
+          <md-card-subtitle>Elon Musk/Jeff Bezos - money.cnn.com</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/leadingTech.jpg">
+        <md-card-content>
+          <p>
+            April 7, 2017: Elon Musk and Jeff Bezos are not only revolutionizing software, but technology as a whole.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="http://money.cnn.com/2017/04/07/technology/jeff-bezos-elon-musk/" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+      <md-card class="my-education-container-content-option">
+        <md-card-header>
+          <md-card-title>What's Next in Technology</md-card-title>
+          <md-card-subtitle>The Future of Technology - wsj.com</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../assets/images/myInterests/futureOfTech.jpg">
+        <md-card-content>
+          <p>
+            March 6, 2017: A very interesting outlook on the future of technology from three venture capitalists.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <a md-button href="https://www.wsj.com/articles/three-vcs-on-whats-next-in-technology-1488856140" target="blank">SEE ARTICLE</a>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+
+</div>
+
+<app-footer-bar></app-footer-bar>

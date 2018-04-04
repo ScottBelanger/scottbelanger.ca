@@ -1,0 +1,31 @@
+<app-header-bar></app-header-bar>
+
+<div class="my-hobbies-cover-photo" style="background-image:url(../assets/images/hobbiesBackground.jpg);">
+</div>
+    
+<div class="my-hobbies-header">
+  <div class="my-hobbies-header-content">
+    <div class="my-hobbies-header-content-title">My Hobbies</div>
+    <hr class="my-hobbies-header-content-underline">
+  </div>
+</div>
+
+<div class="my-hobbies-container">
+  <div class="my-hobbies-container-content">
+    <div id="front-container" *ngFor="let hobby of hobbies; let i of index">
+      <div id="front-card" class="shadow">
+        <div class="front face">
+          <app-hobbies-card 
+            [hobby]="hobby">
+            
+          </app-hobbies-card>
+        </div>
+        <div class="back face" >
+          <p>{{hobbiesInfo[i]}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer-bar></app-footer-bar>

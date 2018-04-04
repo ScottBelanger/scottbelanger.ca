@@ -1,0 +1,71 @@
+
+
+
+<md-card>
+  <md-card-header class="cardflip-guide">
+    <md-card-title class="cardflip-guide-title">
+      <span class="cardflip-guide-title-wrapper">
+        <div>JQV Map</div>
+        <div class="sourceView">
+          <button md-icon-button  (click)="showSourceCode()"><md-icon class="sourceIcon"></md-icon></button>
+        </div>
+      </span>
+    </md-card-title>
+  </md-card-header>
+
+  <md-tab-group [style.display]="showSource">
+    <md-tab label="HTML">
+      <md-card-content>
+        <pre class="html">
+          <span class="hljs-tag">
+  &lt;<span class="hljs-name">md-button-toggle <span class="hljs-attr">value=<span class="hljs-className">"left"</span></span></span>&gt;
+    Left
+  &lt;<span class="hljs-name">/md-button-toggle</span>&gt;
+  &lt;<span class="hljs-name">md-button-toggle <span class="hljs-attr">value=<span class="hljs-className">"center"</span></span></span>&gt;
+    Center
+  &lt;<span class="hljs-name">/md-button-toggle</span>&gt;
+  &lt;<span class="hljs-name">md-button-toggle <span class="hljs-attr">value=<span class="hljs-className">"right"</span></span></span>&gt;
+    Right
+  &lt;<span class="hljs-name">/md-button-toggle</span>&gt;
+&lt;<span class="hljs-name">/md-button-toggle-group</span>&gt;
+          </span>
+          <span class="hljs-tag">
+  &lt;<span class="hljs-name">md-button-toggle</span>&gt;
+    Left
+  &lt;<span class="hljs-name">/md-button-toggle</span>&gt;
+  &lt;<span class="hljs-name">md-button-toggle</span>&gt;
+    Center
+  &lt;<span class="hljs-name">/md-button-toggle</span>&gt;
+  &lt;<span class="hljs-name">md-button-toggle</span>&gt;
+    Right
+  &lt;<span class="hljs-name">/md-button-toggle</span>&gt;
+&lt;<span class="hljs-name">/md-button-toggle-group</span>&gt;
+          </span>
+        </pre>
+      </md-card-content>
+    </md-tab>
+    <md-tab label="TS">
+      <md-card-content>
+      </md-card-content>
+    </md-tab>
+    <md-tab label="CSS">
+      <md-card-content>
+        <pre class="html">
+          <span class="hljs-tag">
+/*No CSS is required for this example */
+          </span>
+        </pre>
+      </md-card-content>
+    </md-tab>
+  </md-tab-group>
+  <hr>
+
+  <div class="interactive-map-container-vmap" id="vmap">
+  </div>
+</md-card>
+
+  
+
+
+
+

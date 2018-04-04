@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+div {
+    font-family: Alegreya;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+}
+
+.about-me-coverPhoto {
+  height: 28vw;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.about-me-header {
+  width: 100%;
+  height: auto;
+  background-color: #2FB8FC;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  color: white;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      
+    &-title {
+      font-size: 30px;
+      background-size: cover; 
+      background-repeat: no-repeat;
+    }
+
+    &-underline {        
+      width: 30%;
+      background-size:cover; 
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.about-me-content {
+  background-color: white;
+  font-size: 16px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  &-bio {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+
+    @media only screen and (max-width : 600px) { flex-direction: column; } 
+
+    &-blurb {
+      padding: 1%;
+    }
+  }
+}

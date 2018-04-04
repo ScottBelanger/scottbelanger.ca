@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+div {
+    font-family: Alegreya;
+}
+
+.my-photos-coverPhoto {
+  height: 28vw;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.my-photos-header {
+  width: 100%;
+  height: auto;
+  background-color: #2FB8FC;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  color: white;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      
+    &-title {
+      font-size: 30px;
+      background-size:cover; 
+      background-repeat: no-repeat;
+    }
+
+    &-underline {        
+      width: 30%;
+      background-size:cover; 
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.my-photos-content {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  background:white;
+
+  &-photoViewer {
+    height: auto;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+
+    &-mainPhoto {
+      height: 40vw;
+      background-repeat: no-repeat; 
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &-photoInformation {
+    height: 60px;
+    font-size: 16px; 
+    width: 100%; 
+    background: black; 
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  &-navigation {
+    height: 8vw; 
+    background: #aaa; 
+    color: white;
+
+    &-list {
+      height: 8vw;
+      list-style: none; 
+      padding: 1%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+.thumbnailPhoto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 8vw;
+  height: 5vw;
+
+  @media only screen and (max-width: 450px) {  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.rotateIconLeft {
+  font-size: 21px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.rotateIconRight {
+  font-size: 21px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#focused {
+  border:1px solid white;
+}
+
+#photoInfo {
+  padding-left: 5%;
+}

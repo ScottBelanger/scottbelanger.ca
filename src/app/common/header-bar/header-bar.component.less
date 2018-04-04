@@ -1,0 +1,61 @@
+.header-bar-container {
+  position: absolute;
+
+  &-content {
+    text-align: center; 
+    padding: 2%; 
+    background: linear-gradient(black, transparent); 
+
+    @media only screen and (max-width : 800px) { display: none; }
+  }
+
+  &-icon {
+    font-size: 32px;
+
+    @media only screen and (max-width : 800px) { font-size: 16px; } 
+
+    :hover {
+      cursor: pointer;
+    }
+
+    &-home {
+      color: white; 
+      text-decoration: none;
+      font-size: 40px;
+
+      :hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.glyphicon {
+  color: white; 
+  text-decoration: none;
+}
+
+.header-bar-container-content-mobile {
+  background: linear-gradient(black, transparent); 
+  color: white;
+  font-size: 24px;
+  padding: 2%;
+  display: none;
+
+  @media only screen and (max-width : 800px) { display: block; } 
+
+  &-menu {
+    z-index: 5;
+  }
+}
+
+.optionsIcon {
+  background: url('../../../assets/images/svg-images/options.svg') no-repeat 50% 50%;
+  fill: white;
+  width: 24px;
+  height: 24px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+div {
+    font-family: 'Alegreya';
+}
+
+.my-hobbies-cover-photo {
+  height:28vw; 
+  background-repeat:no-repeat; 
+  background-size:cover
+}
+
+.my-hobbies-header {
+  width: 100%;
+  height: auto;
+  background-color: #2FB8FC;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  color: white;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      
+    &-title {
+      font-size: 30px;
+      background-size:cover; 
+      background-repeat: no-repeat;
+    }
+
+    &-underline {        
+      width: 30%;
+      background-size:cover; 
+      background-repeat: no-repeat;
+    }
+
+    &-blurb {
+      font-size: 21px;
+      background-size:cover; 
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.my-hobbies-content {
+  font-family: 'Alegreya';
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.my-hobbies-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5%;
+    margin: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+#front-container {
+  position: relative;
+  width: 350px;
+  height: 370px;
+  z-index: 1;
+  padding: 3%;
+}
+#front-container {
+  perspective: 1000;
+}
+#front-card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.3s linear;
+}
+#front-container:hover #front-card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 3%;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+}
+

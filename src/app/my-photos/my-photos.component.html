@@ -1,0 +1,37 @@
+<app-header-bar></app-header-bar>
+
+<div class="my-photos-coverPhoto" style="background-image:url(../assets/images/photoBackground.jpg);">
+</div>
+
+<div class="my-photos-header">
+  <div class="my-photos-header-content">
+    <div class="my-photos-header-content-title">My Photos</div>
+    <hr class="my-photos-header-content-underline">
+  </div>
+</div>
+<div class="my-photos-content">
+  <div class="my-photos-content-photoViewer">
+    <div id="mainPhoto" class="my-photos-content-photoViewer-mainPhoto" [ngStyle]="{ 'background-image': 'url(' + mainPhotoName + ')'}"></div>
+    <div class="my-photos-content-photoInformation">
+      <p id="photoInfo">Vienna</p>
+    </div>
+    <div class="my-photos-content-navigation">
+      <ul class="my-photos-content-navigation-list">
+        <button md-icon-button (click)="rotateLeft()"> 
+          <i class="material-icons md-36">keyboard_arrow_left</i>
+        </button>
+        <li (click)="reFocus(-2)" class="thumbnailPhoto" [ngStyle]="{ 'background-image': 'url(' + thumb1Name + ')'}"></li>
+        <li (click)="reFocus(-1)" class="thumbnailPhoto" [ngStyle]="{ 'background-image': 'url(' + thumb2Name + ')'}"></li>
+        <li id="focused" (click)="reFocus(0)" class="thumbnailPhoto" [ngStyle]="{ 'background-image': 'url(' + thumb3Name + ')'}"></li>
+        <li (click)="reFocus(1)" class="thumbnailPhoto" [ngStyle]="{ 'background-image': 'url(' + thumb4Name + ')'}"></li>
+        <li (click)="reFocus(2)" class="thumbnailPhoto" [ngStyle]="{ 'background-image': 'url(' + thumb5Name + ')'}"></li>
+        <button md-icon-button (click)="rotateRight()"> 
+          <i class="material-icons md-36">keyboard_arrow_right</i>
+        </button>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<app-footer-bar></app-footer-bar>

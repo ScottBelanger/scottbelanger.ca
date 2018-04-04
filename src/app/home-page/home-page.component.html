@@ -1,0 +1,93 @@
+<app-header-bar class="{{showHeader}}-header-bar"></app-header-bar>
+<div class="home-page-content-container">
+    <div class="parallax">
+    </div>
+
+    <div class="row home-page-content-container-row">
+        <div class="col-sm-6 home-page-nametag">
+            <h1 class="home-page-nametag-firstname">Scott</h1>
+            <h1 class="home-page-nametag-lastname">Belanger</h1>
+        </div>
+        <div class="col-sm-6 home-page-hex-container">
+            <ul id="hexGrid">
+                <li class="hex">
+                    <a class="hexIn" (click)="gotoInteractiveMap()">
+                        <img src="" class="glyphicon glyphicon-globe home-page-hex-container-icon"/>
+                        <h1 class="home-page-hex-container-icon-title">My</h1>
+                        <p class="home-page-hex-container-icon-title">Travels</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" (click)="gotoMyPhotos()">
+                        <img src="" class="glyphicon glyphicon-camera home-page-hex-container-icon"/>
+                        <h1 class="home-page-hex-container-icon-title">My</h1>
+                        <p class="home-page-hex-container-icon-title">Photos</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" (click)="gotoAboutMe()">
+                        <img src="" class="glyphicon glyphicon-user home-page-hex-container-icon"/>
+                        <h1 class="home-page-hex-container-icon-title">About</h1>
+                        <p class="home-page-hex-container-icon-title">Me</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" href="../../assets/resources/scottbelanger-resume.pdf" download="Scott Belanger - Resume.pdf">
+                        <img src="" class="glyphicon glyphicon-file home-page-hex-container-icon"/>
+                        <h1 class="home-page-hex-container-icon-title">My</h1>
+                        <p class="home-page-hex-container-icon-title">Resume</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" (click)="gotoMyEducation()">
+                        <img src="" class="glyphicon glyphicon-comment home-page-hex-container-icon"/>
+                        <h1 class="home-page-hex-container-icon-title">My</h1>
+                        <p class="home-page-hex-container-icon-title">Interests</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" (click)="gotoMyHobbies()">
+                        <img src="" class="glyphicon glyphicon-headphones home-page-hex-container-icon"/>
+                        <h1 class="home-page-hex-container-icon-title">My</h1>
+                        <p class="home-page-hex-container-icon-title">Hobbies</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" (click)="gotoProgrammingBackground()">
+                        <img src="" class="glyphicon glyphicon-pencil home-page-hex-container-icon"/>
+                        <h1 class="home-page-hex-container-icon-title">Programming</h1>
+                        <p class="home-page-hex-container-icon-title">Background</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="home-page-aboutme-container">
+    <div class="home-page-aboutme-container-watermark">
+    </div>
+    <div class="home-page-aboutme-container-content">
+        <div class="home-page-aboutme-container-content-pic"></div>
+        <div class="home-page-aboutme-container-content-title">Hi, I'm Scott</div>
+        <div class="home-page-aboutme-container-content-blurb1">
+            I am a full stack developer/software engineer-in-training, currently residing in Toronto. I am
+            highly passionate about UI/UX and enjoy the design and development of beautiful websites.
+        </div>
+    </div>
+
+    <div class="home-page-aboutme-container-content">
+        <div class="home-page-aboutme-container-content-title">My Portfolio</div>
+        <div class="home-page-aboutme-container-content-blurb1">
+            I have developed several websites including a few for school projects, one for a small local business, and two
+            versions of my personal website (One done using nodeJS and Javascript, the other using Angular 2 and Typescript).
+            To view some of my projects, please visit my github repository or check out a website I designed and developed for
+            a small local business here:
+        </div>
+    </div>
+
+    <a class="home-page-aboutme-container-content-portfolio" href="http://www.blacfin.ca" target="_blank">
+    </a>
+</div>
+
+<app-footer-bar></app-footer-bar>

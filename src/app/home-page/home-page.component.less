@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+div {
+  overflow: hidden;
+}
+
+app-header-bar {
+  display: none;
+}
+
+md-card-heaer {
+  font-family: 'Alegreya';
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Alegreya';
+}
+
+.home-page-content-container{
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../../assets/images/homepageBackground.jpg");
+
+  min-height: 100%;
+  min-width: 100%;
+      
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: 100%;
+      
+  /* Set up positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.home-page-nametag {
+  padding-top:9%;
+  text-align:center;
+  color:white;
+  width: 100%;
+  font-family: 'Lobster';
+  text-shadow: 2px 2px 4px #000000;
+
+  &-firstname {
+    font-size:8vw;
+    margin-right:25%;
+  }
+  &-lastname {
+    font-size:8vw;
+    margin-right:-30%;
+  }
+}
+
+.home-page-hex-container {
+  width: 100%;
+  padding-top:6%; 
+  padding-bottom:10%;
+  font-family: 'Lobster';
+  
+  :hover {
+    cursor: pointer;
+  }
+
+  &-icon {
+    font-size:7vw; 
+    color:white; 
+    padding-top:35%;
+    text-shadow: 2px 2px 4px #000000;
+
+    &-title {
+      font-size:2vw; 
+      color:black;
+    }
+  }
+}
+
+.home-page-aboutme-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height:auto;
+  background-color:white; 
+  padding-top:10%; 
+  padding-bottom:10%;
+
+  &-portfolio {
+    width: 250px;
+    height: 300px;
+    
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Alegreya';
+    width: 50%;
+    padding-top: 2%;
+
+    &-pic {
+      background-image: url('../../assets/images/profilePic.jpg');
+      background-size: cover; 
+      width: 200px; 
+      height: 200px; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      border-radius: 150px;
+
+      @media only screen and (max-width : 800px) { width: 100px; height: 100px; } 
+
+    }
+
+    &-portfolio {
+      background-image: url('../../assets/images/portfolioImage1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: white; 
+      width: 200px; 
+      height: 200px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      border-radius: 150px;
+      border: solid black 3px;
+
+      @media only screen and (max-width : 800px) { width: 100px; height: 100px; } 
+    }
+
+    &-title {
+      font-size: 26px;
+      color: #2FB8FC;
+    }
+
+    &-blurb1 {
+      font-size: 18px;
+      color: black;
+    }
+
+    &-blurb2 {
+      font-size: 21px;
+      color: black;
+    }
+  }
+
+  &-content2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-family: 'Alegreya';
+    width: 60%;
+    padding-top: 5%;
+
+    &-pic2 {
+      background-image: url('../../assets/images/profilePic.jpg');
+      background-size:cover; 
+      width: 200px; 
+      height: 200px; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      border-radius: 150px;
+    }
+
+    &-title2 {
+      font-size: 26px;
+      color: #2FB8FC;
+    }
+
+    &-blurb2 {
+      font-size: 18px;
+      color: black;
+    }
+  }
+
+  
+
+  &-content3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-image: url('../../assets/images/ProgrammingLanguages/technologystack.jpg');
+    background-size:cover; 
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 100%;
+        
+    /* Set up proportionate scaling */
+    width: 29vw;
+    height: 50vw;
+    
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .home-page-nametag {
+    text-align:center;
+    color:white;
+    width: 100%;
+    height: 30%;
+  }
+
+  .home-page-content-container{
+    &-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  .home-page-hex-container {
+    width: 100%;
+    padding-top:6%; 
+    padding-bottom:10%;
+  }
+
+  .home-page-programming {
+      background-image: url('../../assets/images/ProgrammingLanguages/technologystack.png');
+      background-size:cover; 
+      background-repeat: no-repeat;
+  }
+}
+
+.show-header-bar {
+  display: block;
+  opacity: 1;
+  position: fixed;
+}
+
+.hide-header-bar {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+

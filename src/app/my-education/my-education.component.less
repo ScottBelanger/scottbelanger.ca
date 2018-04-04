@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+md-card {
+  font-family: Alegreya;
+}
+
+a {
+  font-family: Alegreya;
+}
+
+div {
+  font-family: Alegreya;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+p {
+  text-align: center;
+}
+
+.my-education-coverPhoto {
+  height: 28vw;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.my-education-header {
+  width: 100%;
+  height: auto;
+  background-color: #2FB8FC;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  color: white;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      
+    &-title {
+      font-size: 30px;
+      background-size: cover; 
+      background-repeat: no-repeat;
+    }
+
+    &-underline {        
+      width: 30%;
+      background-size:cover; 
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.my-education-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+   
+  &-quickLinks {
+    padding-bottom: 5%;
+
+    &-list {
+      font-size: 24px;
+      list-style: none;
+      border-left: solid 2px #2FB8FC;
+    }
+  }
+
+  &-title {
+    padding-top: 5%;
+    font-size: 30px;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    color: #2FB8FC;
+  }
+
+  &-content {
+    color: black;
+
+    &-tab{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+      &-info {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      &-link {
+        margin-top: 3%;
+        padding: 10%;
+      }
+    }
+
+    &-cardAlign {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    &-option {
+      width: 330px;
+      margin: 2%;
+    }
+  }
+}
