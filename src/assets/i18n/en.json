@@ -1,0 +1,41 @@
+{
+  "ABOUT_ME": {
+    "TITLE": "About Me",
+    "KINGSTON_BLURB":
+      "I was born in Kingston, Ontario and grew up in a small town just outside of it called Yarker. I am half Chinese and the other half a mix of Irish, French and British.",
+    "SCHOOL":
+      "Throughout high school I was always interested in actuarial science however, after careful consideration I decided to attend Western University for engineering as it offered a general first year program. Through this program I discovered programming and enjoyed it so much that I decided to specialize in Software Engineering for my bachelors degree.",
+    "INTERNSHIP":
+      "After my 3rd year at Western, I decided to participate in a 15 month internship at IBM working on the WebSphere Extreme Scale Team. The team practiced agile development and worked on the Data Cache and Session Cache stream of IBM's Bluemix toolbox.",
+    "AFTER_SCHOOL":
+      "I graduated in July 2016 from The University of Western Ontario in Software Engineering with a Professional internship at IBM. Currently I work as a full stack developer at Precima (customer analytics branch of Alliance Data Systems). I love delving into the latest technologies (AI/Machine Learning, Blockchain and AR/VR) and enjoy a variety of extra-curriculars including sports, video games, reading, and travelling. I am highly passionate about front-end development, and really enjoy UX and UI design.",
+    "END_TITLE": "Let's get to know each other",
+    "EMAIL": "scottcbelanger@gmail.com",
+    "PHONE_NUMBER": "613-888-1390"
+  },
+  "HOBBIES": {
+    "TITLE": "My Hobbies"
+  },
+  "MY_PHOTOS": {
+    "TITLE": "My Photos"
+  },
+  "PROGRAMMING": {
+    "TITLE": "My Programming Background",
+    "ANGULAR":
+      "I have really enjoyed working with Angular 2+ as it allows for creating a highly modularized single page application. Programming in Typescript within Angular 2+ has also been a great learning experience!",
+    "TYPESCRIPT":
+      "Typescript is the most recent language I have learned. I have really enjoyed Typescript as it has allowed IDE's such as VS Code to provide a much more rich experience, while providing the option to implement classes and interfaces.",
+    "JAVA":
+      "I have used Java more than any other language in my years of programming. I really enjoy programming languages that leverage Object Oriented methodologies (perhaps why I enjoy Java so much).",
+    "REDUX":
+      "Redux is a very powerful tool that can benefit complex programs by maintaining a state of the application. I have found redux extremely useful for single page applications as it easily allows data to be accessible across different pages.",
+    "AWS":
+      "I have been utilizing AWS as a means for delivering content for personal projects as well as professionally. I have developed knowledge around Continuous Integration and Deployment as well as a variety of AWS tools such as Cloudfront, S3, Route 53 and EC2.",
+    "JAVSCRIPT":
+      "I have used Javascript in building a variety of web applications and have currently been working using Typescript, a superset of Javascript.",
+    "HTML":
+      "Having built a variety of web applications I am very familiar with HTML and building single page web applications using Angular 2+.",
+    "CSS":
+      "I have used a variety of CSS languages to build web applications however, I have found the preprocessor css language SASS to be one of the most powerful and allows me to write css more quickly and with great extensibility."
+  }
+}

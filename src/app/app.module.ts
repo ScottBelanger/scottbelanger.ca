@@ -47,16 +47,23 @@ import { MyPhotosComponent } from "./my-photos/my-photos.component";
 import { MyHobbiesComponent } from "./my-hobbies/my-hobbies.component";
 import { MyEducationComponent } from "./my-education/my-education.component";
 import { AboutMeComponent } from "./about-me/about-me.component";
-import { HobbiesCardComponent } from "./hobbies-card/hobbies-card.component";
+import { HobbiesCardComponent } from "./ui/hobbies-card/hobbies-card.component";
 
 import "hammerjs";
 import { JqvmapGuideCardComponent } from "./common/jqvmap-guide-card/jqvmap-guide-card.component";
 import { CardflipGuideCardComponent } from "./common/cardflip-guide-card/cardflip-guide-card.component";
 
 //import { NavigateService } from './services/navigate.service';
+import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { ReduxStoreInitializer } from "./store";
 import { NgReduxModule } from "@angular-redux/store";
 import { NgReduxRouterModule } from "@angular-redux/router";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, "../assets/i18n/", ".json");
+}
 
 const routing = RouterModule.forRoot(routes);
 const MdModules = [
@@ -108,13 +115,21 @@ const MdModules = [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     HttpModule,
     RouterModule,
     routing,
     MdModules,
     Ng2PageScrollModule.forRoot(),
     NgReduxModule,
-    NgReduxRouterModule
+    NgReduxRouterModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   exports: [MdModules],
   providers: [ReduxStoreInitializer],

@@ -25,6 +25,8 @@
     "@angular/platform-browser": "4.4.6",
     "@angular/platform-browser-dynamic": "4.4.6",
     "@angular/router": "4.4.6",
+    "@ngx-translate/core": "8.0.0",
+    "@ngx-translate/http-loader": "2.0.0",
     "blooming-menu": "^1.1.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
